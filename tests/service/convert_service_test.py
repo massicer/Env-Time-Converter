@@ -36,3 +36,35 @@ def test_convertion_from_seconds_unit_measure(unit_measure):
     input_string = f'{value} {unit_measure}'
     result = get_milliseconds_value_for_input(input_string)
     assert result == value * 1000
+
+
+@pytest.mark.parametrize('unit_measure', ['min', 'minute', 'minutes'])
+def test_convertion_from_minutes_unit_measure(unit_measure):
+    value = 90
+    input_string = f'{value} {unit_measure}'
+    result = get_milliseconds_value_for_input(input_string)
+    assert result == value * 1000 * 60
+
+
+@pytest.mark.parametrize('unit_measure', ['y', 'years', 'yrs', 'year'])
+def test_convertion_from_years_unit_measure(unit_measure):
+    value = 90
+    input_string = f'{value} {unit_measure}'
+    result = get_milliseconds_value_for_input(input_string)
+    assert result == value * 1000 * 60 * 60 * 24 * 365
+
+
+@pytest.mark.parametrize('unit_measure', ['d', 'days', 'day'])
+def test_convertion_from_days_unit_measure(unit_measure):
+    value = 90
+    input_string = f'{value} {unit_measure}'
+    result = get_milliseconds_value_for_input(input_string)
+    assert result == value * 1000 * 60 * 60 * 24
+
+
+@pytest.mark.parametrize('unit_measure', ['h', 'hours', 'hrs', 'hour'])
+def test_convertion_from_hours_unit_measure(unit_measure):
+    value = 90
+    input_string = f'{value} {unit_measure}'
+    result = get_milliseconds_value_for_input(input_string)
+    assert result == value * 1000 * 60 * 60

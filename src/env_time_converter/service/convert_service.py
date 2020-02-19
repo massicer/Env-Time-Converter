@@ -36,7 +36,7 @@ def get_milliseconds_value_for_input(input_string: str) -> float:
             convert_value = 1000 * 60 * 60
         elif matches[1] in rum.days_allowed_strings():
             convert_value = 1000 * 60 * 60 * 24
-        elif matches[1] in rum.days_allowed_strings():
+        elif matches[1] in rum.years_allowed_strings():
             convert_value = 1000 * 60 * 60 * 24 * 365
         else:
             raise ConvertUnitNotRecognizedException(
