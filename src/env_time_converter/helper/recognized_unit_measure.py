@@ -18,3 +18,7 @@ def days_allowed_strings():
 
 def years_allowed_strings():
     return ['y', 'years', 'yrs', 'year']
+
+
+def minutes_allowed_strings():
+    return ['min', 'minute', 'minutes']

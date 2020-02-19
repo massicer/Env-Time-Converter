@@ -36,3 +36,10 @@ def test_days_unit(unit):
 ])
 def test_years_unit(unit):
     assert unit in recognized_unit_measure.years_allowed_strings()
+
+
+@pytest.mark.parametrize('unit', [
+    'min', 'minute', 'minutes'
+])
+def test_minutes_unit(unit):
+    assert unit in recognized_unit_measure.minutes_allowed_strings()
