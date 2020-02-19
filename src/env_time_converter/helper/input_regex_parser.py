@@ -1,8 +1,6 @@
 import re
 
-REGEX = "/^(-?(?:\d+)?\.?\d+)\
-     *(milliseconds?|msecs?|ms|seconds?|secs?|s|\
-        minutes?|mins?|m|hours?|hrs?|h|days?|d|weeks?|w|years?|yrs?|y)?$/i"
+REGEX = "(-?[0-9]+(?:.[0-9]+)?) *([A-Za-z_]*)?"
 
 
 def parse_input(input: str):
