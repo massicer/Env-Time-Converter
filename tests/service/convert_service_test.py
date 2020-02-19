@@ -1,10 +1,29 @@
 import pytest
+from unittest.mock import patch
+
 
 from env_time_converter.service.convert_service import (
     ConvertUnitNotRecognizedException,
     InputNotInValidFormatException,
-    get_milliseconds_value_for_input
+    get_milliseconds_value_for_input,
+    convert_string_to_float
 )
+
+
+def test_convert_string_to_float_fails():
+    with pytest.raises(InputNotInValidFormatException):
+        convert_string_to_float('not_a_number')
+
+
+def test_convert_string_to_float_succedeed():
+    assert 6789.9 == convert_string_to_float('6789.9')
+
+
+@patch('env_time_converter.service.convert_service.convert_string_to_float')
+def test_value_is_not_a_valid_float_exception(patched_float):
+    patched_float.side_effect = InputNotInValidFormatException
+    with pytest.raises(InputNotInValidFormatException):
+        get_milliseconds_value_for_input('90')
 
 
 def test_convert_value_without_unit_measure_succeeded():

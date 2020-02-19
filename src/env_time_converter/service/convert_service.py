@@ -17,11 +17,7 @@ def get_milliseconds_value_for_input(input_string: str) -> float:
     if len(matches) == 0:
         raise InputNotInValidFormatException('the input is not recognized')
 
-    number_value = None
-    try:
-        number_value = float(matches[0])
-    except ValueError:
-        raise InputNotInValidFormatException('the value is not a valid float')
+    number_value = convert_string_to_float(input=matches[0])
 
     convert_value = 1
 
@@ -44,3 +40,10 @@ def get_milliseconds_value_for_input(input_string: str) -> float:
             )
 
     return int(number_value * convert_value)
+
+
+def convert_string_to_float(input: str) -> float:
+    try:
+        return float(input)
+    except ValueError:
+        raise InputNotInValidFormatException('the value is not a valid float')
