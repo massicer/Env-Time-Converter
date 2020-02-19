@@ -43,4 +43,4 @@ def get_milliseconds_value_for_input(input_string: str) -> float:
                 f'no unit conversion value found for unit {matches[1]}'
             )
 
-    return number_value * convert_value
+    return int(number_value * convert_value)
