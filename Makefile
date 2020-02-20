@@ -13,7 +13,10 @@ lint: ## lint code
 
 bump:
 	poetry version $(INCREMENT)
-
+	
+changelog:
+	git-chglog -o $(CHANGELOG) -next-tag $(SERVICE_VERSION)
+	
 release: test
 	$(MAKE) bump INCREMENT=$(INCREMENT)
 	$(MAKE) changelog
