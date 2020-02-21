@@ -1,6 +1,33 @@
 
+<a name="0.1.3"></a>
+## [0.1.3](https://github.com/massicer/Env-Time-Converter/compare/v0.1.3...0.1.3)
+
+> 2020-02-21
+
+
+<a name="v0.1.3"></a>
+## [v0.1.3](https://github.com/massicer/Env-Time-Converter/compare/0.1.2...v0.1.3)
+
+> 2020-02-21
+
+### Add
+
+* codecov banner to README.md
+* codecov integration in travis-ci
+
+
 <a name="0.1.2"></a>
-## 0.1.2
+## [0.1.2](https://github.com/massicer/Env-Time-Converter/compare/v0.1.2...0.1.2)
+
+> 2020-02-21
+
+### Chore
+
+* more info in order to publish the library
+
+
+<a name="v0.1.2"></a>
+## v0.1.2
 
 > 2020-02-20
 
