@@ -40,22 +40,6 @@ make test
 ```
 ## How To use
 
- - Simply using the `get_milliseconds_value_for_input` with the string value to convert. The below example use the number value `90` and the sigle `s`. 
- 
-    ```
-    from env_time_converter.service.convert_service import get_milliseconds_value_for_input
-    
-    assert 9000 = get_milliseconds_value_for_input('90 s')
-    ```
-
-- When the time measure unit is missing the default value is `milliseconds`
-
-    ```
-    from env_time_converter.service.convert_service import get_milliseconds_value_for_input
-    
-    assert 90 = get_milliseconds_value_for_input('90')
-    ```
-
 ### Available time formats
 | Unit Measure       | Allowed Sigles | default |
 | ------------- |:-----:| :-----:|
@@ -65,6 +49,25 @@ make test
 | `hours`  | `h` , `hours`, `hrs`, `hour`|
 | `days`  | `d` , `days`, `day`|
 | `years`  | `y` , `years`, `yrs`, `year`|
+
+
+
+ - Simply using the `get_milliseconds_value_for_input` with the string value to convert. The below example use the number value `90` and the sigle `s`. 
+ 
+    ```
+    from env_time_converter.service.convert_service import get_milliseconds_value_for_input
+    
+    os.environ['JOB_TIME'] = '90 seconds' # Assume this ENV is set by your .yaml or other configuration file.
+    assert 9000 = get_milliseconds_value_for_input(os.environ['JOB_TIME'])
+    ```
+
+- When the time measure unit is missing the default value is `milliseconds`
+
+    ```
+    from env_time_converter.service.convert_service import get_milliseconds_value_for_input
+    
+    assert 90 = get_milliseconds_value_for_input('90')
+    ```
 
 
 ## Authors
