@@ -8,6 +8,9 @@ install:
 test: install ## run all tests
 	poetry run pytest -vv --cov=src --cov-report term-missing
 
+codecov-test: install ## run all tests
+	poetry run pytest -vv --cov=src  --cov=codecov 
+
 lint: ## lint code
 	poetry run flake8 src tests
 
