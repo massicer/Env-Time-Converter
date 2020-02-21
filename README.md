@@ -1,3 +1,5 @@
+![codecov](https://codecov.io/gh/massicer/Env-Time-Converter/branch/master/graph/badge.svg)
+
 # ENV Time Converter
 
 Easily manage different `time interval values`  and convert them to `milliseconds`. You can use this project to set a more readable info on your `.env`, `.yaml` or other configuration file.
