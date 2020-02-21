@@ -4,8 +4,23 @@ version = "0.1.2"
 description = "Easily convert differt time-range format to standard ones"
 authors = ["Massimiliano Ceriani <massimiliano.ceriani08@gmail.com>"]
 
+# New attributes
+license = "GPL-3.0-only"
+readme = "README.md"
+homepage = "https://github.com/massicer/Env-Time-Converter"
+repository = "https://github.com/massicer/Env-Time-Converter"
+keywords = ["env", "converter", "time-range", "time", "python"]
+classifiers = [
+    "Environment :: Plugins",
+    "Operating System :: OS Independent"
+]
+include = [
+    "LICENSE",
+]
+
+
 [tool.poetry.dependencies]
-python = "^3.5"
+python = "^3.7"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.3"
