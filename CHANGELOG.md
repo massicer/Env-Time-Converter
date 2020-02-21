@@ -1,6 +1,6 @@
 
-<a name="0.1.3"></a>
-## [0.1.3](https://github.com/massicer/Env-Time-Converter/compare/v0.1.3...0.1.3)
+<a name="0.1.4"></a>
+## [0.1.4](https://github.com/massicer/Env-Time-Converter/compare/v0.1.3...0.1.4)
 
 > 2020-02-21
 
