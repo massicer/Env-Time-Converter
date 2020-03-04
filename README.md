@@ -57,8 +57,10 @@ make test
     ```
     from env_time_converter.service.convert_service import get_milliseconds_value_for_input
     
-    os.environ['JOB_TIME'] = '90 seconds' # Assume this ENV is set by your .yaml or other configuration file.
-    assert 9000 = get_milliseconds_value_for_input(os.environ['JOB_TIME'])
+    # Assume this ENV is set by your .yaml or other configuration file.
+    os.environ['JOB_TIME'] = '90 seconds' 
+
+    assert 9000 == get_milliseconds_value_for_input(os.environ['JOB_TIME'])
     ```
 
 - When the time measure unit is missing the default value is `milliseconds`
@@ -66,7 +68,7 @@ make test
     ```
     from env_time_converter.service.convert_service import get_milliseconds_value_for_input
     
-    assert 90 = get_milliseconds_value_for_input('90')
+    assert 90 == get_milliseconds_value_for_input('90')
     ```
 
 
