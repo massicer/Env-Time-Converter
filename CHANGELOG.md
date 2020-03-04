@@ -1,12 +1,16 @@
 
+<a name="0.1.6"></a>
+## [0.1.6](https://github.com/massicer/Env-Time-Converter/compare/0.1.4...0.1.6)
+
+> 2020-03-04
+
+### Fix
+
+* README.md examples
+
+
 <a name="0.1.4"></a>
-## [0.1.4](https://github.com/massicer/Env-Time-Converter/compare/v0.1.3...0.1.4)
-
-> 2020-02-21
-
-
-<a name="v0.1.3"></a>
-## [v0.1.3](https://github.com/massicer/Env-Time-Converter/compare/0.1.2...v0.1.3)
+## [0.1.4](https://github.com/massicer/Env-Time-Converter/compare/0.1.2...0.1.4)
 
 > 2020-02-21
 
@@ -17,19 +21,9 @@
 
 
 <a name="0.1.2"></a>
-## [0.1.2](https://github.com/massicer/Env-Time-Converter/compare/v0.1.2...0.1.2)
+## 0.1.2
 
 > 2020-02-21
-
-### Chore
-
-* more info in order to publish the library
-
-
-<a name="v0.1.2"></a>
-## v0.1.2
-
-> 2020-02-20
 
 ### Add
 
@@ -45,6 +39,7 @@
 
 ### Chore
 
+* more info in order to publish the library
 * makefile generate changelog step
 * travis.yml configuration file
 * init project

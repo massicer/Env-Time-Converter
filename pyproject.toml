@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "env-time-converter"
-version = "0.1.4"
+version = "0.1.6"
 description = "Easily convert differt time-range format to standard ones"
 authors = ["Massimiliano Ceriani <massimiliano.ceriani08@gmail.com>"]
 
