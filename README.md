@@ -1,4 +1,5 @@
 ![codecov](https://codecov.io/gh/massicer/Env-Time-Converter/branch/master/graph/badge.svg)
+[![Build Status](https://travis-ci.org/massicer/PyTime-Converter.svg?branch=master)](https://travis-ci.org/massicer/PyTime-Converter)
 
 # PyTime Converter
 
@@ -55,7 +56,7 @@ make test
  - Simply using the `get_milliseconds_value_for_input` with the string value to convert. The below example use the number value `90` and the sigle `s`. 
  
     ```
-    from env_time_converter.service.convert_service import get_milliseconds_value_for_input
+    from pytime_converter.service.convert_service import get_milliseconds_value_for_input
     
     # Assume this ENV is set by your .yaml or other configuration file.
     job_time =  '90 seconds' 
@@ -66,7 +67,7 @@ make test
 - When the time measure unit is missing the default value is `milliseconds`
 
     ```
-    from env_time_converter.service.convert_service import get_milliseconds_value_for_input
+    from pytime_converter.service.convert_service import get_milliseconds_value_for_input
     
     assert 90 == get_milliseconds_value_for_input('90')
     ```
