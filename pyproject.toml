@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "env-time-converter"
+name = "pytime-converter"
 version = "0.1.6"
 description = "Easily convert differt time-range format to standard ones"
 authors = ["Massimiliano Ceriani <massimiliano.ceriani08@gmail.com>"]
@@ -7,8 +7,8 @@ authors = ["Massimiliano Ceriani <massimiliano.ceriani08@gmail.com>"]
 # New attributes
 license = "GPL-3.0-only"
 readme = "README.md"
-homepage = "https://github.com/massicer/Env-Time-Converter"
-repository = "https://github.com/massicer/Env-Time-Converter"
+homepage = "https://github.com/massicer/PyTime-Converter"
+repository = "https://github.com/massicer/PyTime-Converter"
 keywords = ["env", "converter", "time-range", "time", "python"]
 classifiers = [
     "Environment :: Plugins",
@@ -31,4 +31,3 @@ codecov = "^2.0"
 
 [build-system]
 requires = ["poetry>=0.12"]
-build-backend = "poetry.masonry.api"
