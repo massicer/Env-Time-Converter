@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pytime-converter"
-version = "0.1.6"
+version = "0.1.7"
 description = "Easily convert differt time-range format to standard ones"
 authors = ["Massimiliano Ceriani <massimiliano.ceriani08@gmail.com>"]
 

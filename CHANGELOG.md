@@ -1,6 +1,20 @@
 
-<a name="0.1.6"></a>
-## [0.1.6](https://github.com/massicer/Env-Time-Converter/compare/0.1.4...0.1.6)
+<a name="0.1.7"></a>
+## [0.1.7](https://github.com/massicer/Env-Time-Converter/compare/v0.1.6...0.1.7)
+
+> 2020-06-13
+
+### Change
+
+* rename_project
+
+### Docs
+
+* readme
+
+
+<a name="v0.1.6"></a>
+## [v0.1.6](https://github.com/massicer/Env-Time-Converter/compare/0.1.4...v0.1.6)
 
 > 2020-03-04
 
