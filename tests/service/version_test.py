@@ -1,4 +1,4 @@
-from env_time_converter import __version__
+from pytime_converter import __version__
 
 
 def test_version():

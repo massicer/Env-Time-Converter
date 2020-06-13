@@ -1,6 +1,6 @@
 import pytest
 
-from env_time_converter.helper.input_regex_parser import (
+from pytime_converter.helper.input_regex_parser import (
     parse_input,
     REGEX
 )

@@ -1,6 +1,6 @@
 import pytest
 
-from env_time_converter.helper import recognized_unit_measure
+from pytime_converter.helper import recognized_unit_measure
 
 
 @pytest.mark.parametrize('unit', [

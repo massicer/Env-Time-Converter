@@ -1,5 +1,5 @@
-from env_time_converter.helper import recognized_unit_measure as rum
-from env_time_converter.helper.input_regex_parser import parse_input
+from pytime_converter.helper import recognized_unit_measure as rum
+from pytime_converter.helper.input_regex_parser import parse_input
 
 
 class ConvertUnitNotRecognizedException(Exception):
