@@ -1,3 +1,3 @@
 import pkg_resources
 
-__version__ = pkg_resources.get_distribution('env-time-converter').version
+__version__ = pkg_resources.get_distribution('pytime-converter').version
