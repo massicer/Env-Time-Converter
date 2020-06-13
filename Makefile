@@ -33,3 +33,6 @@ minor: ## release a new minor
 
 patch: ## release a new patch
 	$(MAKE) release INCREMENT='patch'
+
+publish: ## publish a new version on pypi
+	poetry publish -u ${username} -p ${password} --build
